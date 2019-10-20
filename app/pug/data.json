@@ -1,13 +1,640 @@
 {
-    "$schema": "./schema.data.json",
-    "documents": [
-        {
-            "name": "index",
-            "title": "Home",
-            "color_scheme": "#000"
-        }
+  "home": {
+    "title": "Advogrand",
+    "phone": "+7 (926) 536-75-19",
+    "theme": "#fff"
+  },
+  "navbar": {
+    "items": [
+      {
+        "text": "Услуги",
+        "link": "#services"
+      },
+      {
+        "text": "О сервисе",
+        "link": "#about"
+      },
+      {
+        "text": "Как мы работаем",
+        "link": "#howto"
+      },
+      {
+        "text": "Преимущества",
+        "link": "#advantages"
+      },
+      {
+        "text": "Партнеры",
+        "link": "#partners"
+      },
+      {
+        "text": "Тарифы",
+        "link": "#rate"
+      },
+      {
+        "text": "Контакты",
+        "link": "#contacts"
+      }
     ],
-    "sections": [
-        
+    "buttons": {
+      "btn_recall": {
+        "text": "Перезвоните мне",
+        "link": "#callback"
+      }
+    }
+  },
+  "headerbar": {
+    "logo": {
+      "icon": "logo",
+      "text": "Advogrand"
+    },
+    "description": {
+      "text": "Ваш личный юрист всегда на связи"
+    },
+    "recall": {
+      "icon": "call",
+      "link": "tel:"
+    }
+  },
+  "main_screen": {
+    "section_title": {
+      "text": "«личного юриста»",
+      "sub": "Годовой абонемент на услуги",
+      "subtitle": "24 часа в сутки Ваш личный юрист<br> – <b>Advogrand</b> на связи<br> всего за <b>12 рублей в день</b>"
+    },
+    "buttons": {
+      "want_lawyer": {
+        "text": "Хочу «личного юриста»!",
+        "link": "#rate"
+      }
+    }
+  },
+  "services_screen": {
+    "section_title": {
+      "text": "Услуги предоставляемые сервисом Advogrand"
+    },
+    "services": [
+      {
+        "icon": "consulting-1",
+        "text": "Устные<br>консультации"
+      },
+      {
+        "icon": "consulting",
+        "text": "Устные<br>бизнес-консультации"
+      },
+      {
+        "icon": "customer-service",
+        "text": "Звонок<br>юриста"
+      },
+      {
+        "icon": "checklist",
+        "text": "Письменные<br>консультации"
+      },
+      {
+        "icon": "round-table",
+        "text": "Содействие<br>в переговорах"
+      },
+      {
+        "icon": "manager",
+        "text": "Консультации<br>в отношении третьих лиц"
+      },
+      {
+        "icon": "diploma",
+        "text": "Модели<br>договора"
+      },
+      {
+        "icon": "constitution",
+        "text": "Обзор изменений<br>в законодательстве"
+      },
+      {
+        "icon": "libra",
+        "text": "Все области<br>права"
+      }
     ]
+  },
+  "about_screen": {
+    "section_title": {
+      "text": "О сервисе Advogrand"
+    },
+    "description": {
+      "text": "<p>В составе нашей команды трудятся профессионалы, имеющие огромный опыт реальной юридической практики.<br>Благодаря этому мы всегда можем найти юридически верное решение, защищающее интересы, сглаживающее<br>  конфликтные ситуации.</p><p>Наше абонентское обслуживание позволяет сохранить нашим клиентам время, деньги и душевное спокойствие,<br> ведь ваши интересы находятся под круглосуточной защитой «личного адвоката».</p>"
+    },
+    "items": [
+      {
+        "title": "9",
+        "description": "лет на российском<br>рынке"
+      },
+      {
+        "title": "289",
+        "description": "квалифицированных<br>специалистов"
+      },
+      {
+        "title": "> 2,5 млн.",
+        "description": "решенных вопросов"
+      },
+      {
+        "title": "3",
+        "description": "работаем<br>в 3-х странах мира"
+      }
+    ]
+  },
+  "howto_screen": {
+    "section_title": {
+      "text": "Как оказывается услуга"
+    },
+    "items": [
+      {
+        "icon": "people",
+        "text": "Появился вопрос – звоните по бесплатному номеру"
+      },
+      {
+        "icon": "manager_law",
+        "text": "Описываете ситуацию – получаете ответ в течении 15 минут"
+      },
+      {
+        "icon": "question_complete",
+        "text": "<b>Ваш вопрос решен!</b>"
+      }
+    ]
+  },
+  "advantages_screen": {
+    "section_title": {
+      "text": "Преимущество сервиса Advogrand по сравнению с другими юридическими компаниями"
+    },
+    "type_comparison": [
+      "Одна консультация",
+      "Дополнительные услуги",
+      "Решение вопроса",
+      "Время работы",
+      "Оплата"
+    ],
+    "advogrand": [
+      "<b>Advogrand</b>",
+      "От 120 руб",
+      "Входят в абонемент",
+      "По телефону",
+      "Круглосуточно",
+      "Всего 1 раз в год"
+    ],
+    "other": [
+      "<b>Юридические компании</b>",
+      "Более 1000 руб",
+      "Оплачиваются отдельно",
+      "В офисе",
+      "С 9:00 до 18:00",
+      "Каждый раз  при обращении"
+    ],
+    "our_services_used": {
+      "title": "Нашими услугами уже пользуются:",
+      "who": [
+        {
+          "icon": "employee",
+          "who": "<b>208 000</b> - мужчин"
+        },
+        {
+          "icon": "woman",
+          "who": "<b>137 000</b> - женщин"
+        },
+        {
+          "icon": "parents",
+          "who": "<b>63 000</b> - семейных пар"
+        },
+        {
+          "icon": "growth",
+          "who": "<b>13 500</b> - предпринимателей"
+        }
+      ],
+      "buttons": {
+        "more": {
+          "text": "Узнать больше!",
+          "link": "#leave-question"
+        }
+      }
+    }
+  },
+  "partners_screen": {
+    "section_title": {
+      "text": "Партнеры Advogrand"
+    },
+    "items": [
+      {
+        "img": "1",
+        "description": "«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти",
+        "alt": "Глобэкс"
+      },
+      {
+        "img": "2",
+        "description": "«Спартак» — российский профессиональный футбольный клуб из Москвы, один из самых популярных футбольных клубов страны. Основан 18 апреля 1922 года.",
+        "alt": "Спартак"
+      },
+      {
+        "img": "3",
+        "description": "Общество с ограниченной ответственностью «БИН Страхование» (до ноября 2012 года ООО «Первая страховая компания») — универсальный российский страховщик, работающий на рынке страхования и перестрахования с августа 2000 года.",
+        "alt": "БИН Страхование"
+      },
+      {
+        "img": "4",
+        "description": "Владимир Фонарев  с 1991 года активно выступает, играя в клубах и на больших вечеринках. Выступал в более чем 60 городах России и ближнего и дальнего зарубежья.",
+        "alt": "Владимир Фонарев"
+      }
+    ]
+  },
+  "reviews_screen": {
+    "section_title": {
+      "text": ""
+    },
+    "categories": [
+      {
+        "name": "healthcare",
+        "title": "Здравоохранение",
+        "is_active": true,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "name": "business",
+        "title": "Бизнес",
+        "is_active": false,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "name": "family",
+        "title": "Семья",
+        "is_active": false,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "name": "communal_services",
+        "title": "ЖКХ",
+        "is_active": false,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "name": "property",
+        "title": "Недвижимость",
+        "is_active": false,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      },
+      {
+        "name": "all",
+        "title": "Все",
+        "is_active": false,
+        "reviews_list": [
+          {
+            "title": "",
+            "img": "",
+            "link": ""
+          }
+        ]
+      }
+    ]
+  },
+  "rate_screen": {
+    "section_title": {
+      "text": "Выберите тариф",
+      "subtitle": "Вы можете оформить карту и начать пользоваться услугами уже сейчас!<br>Оформление займёт всего 10 минут"
+    },
+    "price": {
+      "text": "Цена:"
+    },
+    "select_your_card": {
+      "text": "Выберите годовую карту, которая Вам подходит:"
+    },
+    "tabs": [
+      {
+        "name": "compare",
+        "link": "name",
+        "text": "Сравнить тарифы",
+        "is_active": false,
+        "class": ""
+      },
+      {
+        "name": "list",
+        "text": "Тарифы",
+        "link": "name",
+        "is_active": true,
+        "class": "_col tab-active"
+      }
+    ],
+    "rates": [
+      {
+        "name": "personal",
+        "title": "Персональная карта<br><b>для Вас</b>",
+        "img": "personal_standard.jpg",
+        "compare": [
+          {
+            "title": "Устные консультации",
+            "duration": "2 в месяц"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": "2 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "2 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": "1 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "1 в месяц"
+          }
+        ],
+        "list": [
+          {
+            "title": "Устные консультации",
+            "duration": " 2 в месяц"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": " 2 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "2 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": " 1 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "1 в месяц"
+          }
+        ],
+        "price": {
+          "by_year": "4 720 ₽ за год"
+        },
+        "buttons": {
+          "consultation": {
+            "title": "Консультация",
+            "link": "#callback",
+            "class": "btn_orange-gradient"
+          },
+          "buy": {
+            "title": "Купить",
+            "link": "https://elsbroker.com/cards/personal/?id=165092"
+          }
+        }
+      },
+      {
+        "name": "family",
+        "title": "Карта<br><b>для всей семьи</b>",
+        "img": "family_standard.jpg",
+        "compare": [
+          {
+            "title": "Устные консультации",
+            "duration": "2 в месяц"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": "2 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "2 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": "1 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "1 в месяц"
+          },
+          {
+            "title": "Сервис для всей семьи",
+            "duration": ""
+          }
+        ],
+        "list": [
+          {
+            "title": "Устные консультации",
+            "duration": "3 в месяц"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": "4 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "3 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": "4 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "2 в месяц"
+          },
+          {
+            "title": "<b>Сервис для всей семьи</b>",
+            "duration": ""
+          }
+        ],
+        "price": {
+          "by_year": "9 440 ₽ за год"
+        },
+        "buttons": {
+          "consultation": {
+            "title": "Консультация",
+            "link": "#callback",
+            "class": "btn_green-gradient"
+          },
+          "buy": {
+            "title": "Купить",
+            "link": "https://elsbroker.com/cards/family/?id=165092"
+          }
+        }
+      },
+      {
+        "name": "business",
+        "title": "Карта<br><b>для бизнеса</b>",
+        "img": "business_standard.jpg",
+        "compare": [
+          {
+            "title": "Устные консультации",
+            "duration": " 2 в месяц"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": " 2 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "2 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": " 1 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "1 в месяц"
+          },
+          {
+            "title": "Бизнес-косультации",
+            "duration": ""
+          },
+          {
+            "title": "Рекомендуемая модель договора",
+            "duration": ""
+          },
+          {
+            "title": "Обзор изменений в законодательстве",
+            "duration": ""
+          }
+        ],
+        "list": [
+          {
+            "title": "Устные консультации",
+            "duration": "неогранчено"
+          },
+          {
+            "title": "Консультации в отношении 3-х лиц",
+            "duration": "4 в год"
+          },
+          {
+            "title": "Письменные консультации ",
+            "duration": "3 в квартал"
+          },
+          {
+            "title": "Звонок юриста",
+            "duration": "4 в год"
+          },
+          {
+            "title": "Содействие в переговорах ",
+            "duration": "неогранчено"
+          },
+          {
+            "title": "<b>Рекомендуемая модель договора</b>",
+            "duration": ""
+          }
+        ],
+        "price": {
+          "by_year": "18 880 ₽ за год"
+        },
+        "buttons": {
+          "consultation": {
+            "title": "Консультация",
+            "link": "#callback",
+            "class": "btn_blue-gradient"
+          },
+          "buy": {
+            "title": "Купить",
+            "link": "https://elsbroker.com/cards/business/?id=165092"
+          }
+        }
+      }
+    ]
+  },
+  "contacts_screen": {
+    "section_title": {
+      "text": "Контакты"
+    },
+    "contacts": {
+      "phone": {
+        "text": "Телефон для покупки карт:"
+      },
+      "email": {
+        "text": "Email:",
+        "email": "info@advogrand.net"
+      },
+      "working_hours": {
+        "text": "Время работы:",
+        "weekdays": {
+          "text": "С понедельника по пятницу:<br>9:00 — 22:00"
+        },
+        "weekends": {
+          "text": "В праздничные и выходные дни:<br>только телефонные консультации<br>10:00 — 20:00"
+        }
+      }
+    },
+    "ask_question": {
+      "form": {
+        "action": "#",
+        "method": "post",
+        "title": "Напишите нам письмо или задайте<br>свой вопрос",
+        "inputs": [
+          {
+            "title": "Введите своё имя",
+            "type": "text",
+            "id": "name"
+          },
+          {
+            "title": "Ваш номер телефона",
+            "type": "tel",
+            "id": "phone"
+          },
+          {
+            "title": "Сообщение или вопрос",
+            "type": "textarea",
+            "id": "message"
+          }
+        ],
+        "buttons": {
+          "order_call": {
+            "text": "Заказать звонок консультанта",
+            "class": "",
+            "type": "submit",
+            "button_signature": "Перезвоним Вам в течении 5 минут"
+          }
+        }
+      }
+    }
+  },
+  "modals": [
+    {
+      "name": "leave-question",
+      "object": "contacts_screen.ask_question.form"
+    },
+    {
+      "name": "callback",
+      "object": "contacts_screen.ask_question.form",
+      "replace": [
+        {
+          "key": "contacts_screen.ask_question.form.title",
+          "value": "Оставьте свой номер и мы свяжемся<br>с вами",
+          "is_obj": false
+        },
+        {
+          "key": "contacts_screen.ask_question.form.inputs",
+          "value": "contacts_screen.ask_question.form.inputs[:2]",
+          "is_obj": true
+        }
+      ]
+    }
+  ]
 }

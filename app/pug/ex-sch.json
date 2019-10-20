@@ -1,0 +1,62 @@
+{
+  "$schema": "./json-schema.json",
+  "documents": [
+    {
+      "id": "",
+      "name": "",
+      "title": "",
+      "color_scheme": ""
+    }
+  ],
+  "form": {
+    "action": "str",
+    "method": "str",
+    "title": "",
+    "inputs": [
+      {
+        "id": "str",
+        "type": "str",
+        "label": "",
+        "placeholder": ""
+      }
+    ],
+    "buttons": [
+      {
+        "id": "str",
+        "name": "str",
+        "type": "str",
+        "text": "str",
+        "class": "str"
+      }
+    ]
+  },
+  "tabs": {
+    "list": [
+      {
+        "id": "",
+        "name": "",
+        "text": ""
+      }
+    ],
+    "content": [
+      {}
+    ]
+  },
+  "modals": [
+    {
+      "id": "",
+      "name": ""
+    }
+  ],
+  "sections": [
+    {
+      "id": "",
+      "name": "",
+      "title": {
+        "text": "Title of section",
+        "subtitle": ""
+      },
+      "dssdsds_items": []
+    }
+  ]
+}

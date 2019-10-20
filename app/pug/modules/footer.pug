@@ -1,0 +1,11 @@
+footer.footer
+    .container
+        .row
+            +b.logo
+                +icon($.headerbar.logo.icon, 'gray')
+                svg(style='width:0;height:0;position:absolute;' aria-hidden='true' focusable='false')
+                    linearGradient#logo-gradient-gray
+                        stop(offset='0%' stop-color='#ffffff')
+                        stop(offset='60%' stop-color='#ffffff')
+                        stop(offset='100%' stop-color='#c1c1c1')
+                +e.SPAN.text= $.home.title

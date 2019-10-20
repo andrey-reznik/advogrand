@@ -1,8 +1,656 @@
-@import "tools/fonts"
-@import "tools/libs"
-@import "tools/vars"
-@import "tools/mixins"
-@import "tools/extends"
-@import "tools/keyframes"
-@import "tools/smart-grid"
-@import "tools/media"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "mixins"
+@import "extends"
+@import "keyframes"
+@import "smart-grid"
+@import "media"
+@import "buttons"
+@import "tabs"
+@import "inputs"
+@import "modal"
+@import "burger"
+
++reset()
+
+.container
+    +wrapper()
+
+.row
+    +row-flex()
+a
+    text-decoration: none
+body
+    overflow-y: scroll
+// Typography
+body
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    color: $primary-text-color
+h1, h2, h3, h4, h5, h6
+    color: #1c1c1c
+h1, h2
+    font-weight: 700
+h1
+    font-size: 32px
+h2
+    font-size: 30px
+a
+    color: $primary-text-color
+section
+    padding: 100px 0
+
+// Other
+.logo
+    display: flex
+    align-items: center
+    &__text
+        margin-left: 10px
+        font-weight: 700
+        font-size: 23px
+    .icon-logo
+        max-height: 40px
+        max-width: 35px
+        min-height: 40px
+        min-width: 35px
+        &.red
+            fill: url(#logo-gradient-red)
+        &.gray
+            fill: url(#logo-gradient-gray)
+.rounded-square-icon
+    width: 40px
+    height: 40px
+    border-radius: 5px
+    border: 1px solid $palette-light-red
+    display: flex
+    justify-content: center
+    align-items: center
+    .icon
+        fill: $palette-light-red
+        max-width: 20px
+        max-height: 20px
+// Header section
+.header
+    border-bottom: 1px solid #f4f4f4
+    padding: 10px 0
+    .navbar
+        +col()
+        +size(12)
+        margin: auto
+        display: flex
+        +to(1020px)
+            position: absolute
+            display: none
+            // height: 0
+            overflow: hidden
+            flex-direction: column
+            background: #ffffff
+            border-bottom-right-radius: 5px
+            border-bottom-left-radius: 5px
+        .phone
+            font-weight: 700
+            font-size: 14px
+            display: flex
+            align-items: center
+            white-space: nowrap
+            justify-content: center
+            +to(1020px)
+                margin-bottom: 15px
+        .menu
+            +to(1020px)
+                flex-direction: column
+                position: relative
+                width: auto
+                &__item
+                    line-height: 30px
+            display: flex
+            font-size: 14px
+            justify-content: space-around
+            width: 100%
+            align-items: center
+            padding: 0 25px
+            &__link
+                transition: all .3s ease
+                &:hover
+                    color: $palette-dark-red
+    .btn
+        font-size: 12px
+        padding: 10px
+
+// Section Hederbar
+.hederbar
+    padding: 20px 0
+    +to(830px)
+        .logo, .description, .phone
+            +size(12)            
+            margin-bottom: 15px
+            justify-content: center
+            &:last-child
+                margin-bottom: 0
+        .phone
+            .text
+                margin: auto
+            .rounded-square-icon
+                display: none
+    .logo
+        +col()
+        +size(3)
+    .description
+        +col()
+        +size(5)
+        margin: auto
+        text-align: center
+    .phone
+        +col()
+        +size(4)
+        margin-left: auto
+        color: $primary-text-color
+        font-size: 18px
+        font-weight: 700
+        display: flex
+        align-items: center
+        cursor: pointer
+        justify-content: flex-end
+        .text
+            margin-right: 30px
+
+// Section Main
+.main
+    background: url('/img/main_bg.jpg') no-repeat center center / cover
+    padding: 130px 0
+    color: $palette-white
+    &-content
+        +col()
+        +size(6)
+        display: flex
+        flex-direction: column
+        +to(1020px)
+            +size(12)
+        .sub-header, .section-header
+            line-height: 50px
+        .sub-header
+            font-size: 30px
+        .section-header
+            text-transform: uppercase
+            color: $palette-white
+            font-size: 40px
+        .subtitle
+            line-height: 32px
+            font-size: 24px
+            margin-top: 65px
+        .btn
+            margin-top: 65px
+            width: 300px
+            height: 65px
+// Section Services
+
+.services
+    .section-title
+        +col()
+        +size(12)
+        text-align: center
+    .services
+        +col()
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .service-item
+            +col()
+            +size(4)
+            +to(870px)
+                +size(6)
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                &:last-child
+                    +size(12)
+            display: flex
+            align-items: center
+            margin-top: 90px
+            .icon
+                max-height: 50px
+                max-width: 50px
+                fill: #c20c0c
+            &__text
+                margin-left: 25px
+                +to(870px)
+                    margin: auto
+                    margin-top: 20px
+
+// Section About
+
+.about
+    background: url('/img/about_bg.jpg') no-repeat center center / cover
+    color: $palette-white
+    text-align: center
+    .section-title
+        +col()
+        +size(12)
+        color: $palette-white
+    .description
+        +col()
+        +size(12)
+        margin-top: 80px
+        p
+            margin-bottom: 34px
+            &:last-child
+                margin: 0
+    .info
+        margin-top: 85px
+        width: 100%
+        display: flex
+        +md-block()
+            flex-wrap: wrap
+        &-item
+            +col()
+            +size(3)
+            +md-block()
+                +size(6)
+            display: flex
+            margin-bottom: 40px
+            flex-direction: column
+            &:last-child
+                margin-bottom: 0
+            &__title
+                font-size: 48px
+                white-space: nowrap
+                font-weight: 700
+                +lg-block()
+                    font-size: 36px
+            &__description
+                white-space: nowrap
+// Section Howto
+
+.howto
+    background-color: #f5f5f5
+    .section-title
+        +col()
+        +size(12)
+        text-align: center
+    .service-road
+        display: flex
+        width: 100%
+        margin-top: 50px
+        flex-wrap: wrap
+        .road-item
+            +col()
+            +size(4)
+            +md-block()
+                +size(12)
+            text-align: center
+            .icon
+                max-height: 150px
+                max-width: 150px
+                fill: #251708
+            &__text
+                margin-top: 35px
+
+//  Section advantages
+
+.advantages
+    font-weight: 300
+    b
+        font-weight: 700
+    .section-title
+        +col()
+        +size(12)
+        text-align: center
+    .row
+        padding-top: 80px
+    .advantages-list
+        +col()
+        +size(8)
+        +to(1029px)
+            +size(12)
+    .table
+        display: flex
+        align-items: flex-end
+        text-align: center
+        line-height: 45px
+        font-size: 13px
+        +to(681px)
+            overflow-x: auto
+            white-space: nowrap
+            &__table-col
+                &:nth-child(2)
+                    padding: 30px 20px 40px 20px
+        &__table-col
+            width: 210px
+            padding: 30px 0 40px 0
+            box-sizing: border-box
+            &:first-child
+                margin-right: 30px
+                text-align: right
+            &_green
+                background-color: #26b83a
+                color: $palette-white
+                box-shadow: 0 10px 10px rgba(38, 184, 58, 0.2)
+            &_bordered
+                border: 1px solid #e8e8e8
+    .our-services-used
+        +col()
+        +size(4)
+        +to(1029px)
+            +size(12)
+            margin-top: 30px
+        display: flex
+        flex-direction: column
+        .title
+            font-weight: 700
+            margin-bottom: 35px
+            display: block
+            white-space: nowrap
+            +sm-block()
+                white-space: normal
+        .who-use
+            display: flex
+            margin-bottom: 20px
+            align-items: center
+            .icon
+                fill: #c20c0c
+                max-height: 25px
+                max-width: 25px
+            &__text
+                margin-left: 20px
+        .btn
+            width: 100%
+            height: 65px
+            margin-top: auto
+
+// Section Partners
+.partners
+    .section-title
+        +col()
+        +size(12)
+        text-align: center
+    &-list
+        margin-top: 70px
+        display: flex
+        width: 100%
+        justify-content: space-between
+        flex-wrap: wrap
+        .partner-item
+            +col()
+            +size(3)
+            +to(1029px)
+                +size(6)
+                display: flex
+                justify-content: center
+                align-items: center
+            position: relative
+            cursor: default
+            &__description
+                z-index: 100
+                opacity: 0
+                width: 100%
+                height: 100%
+                position: absolute
+                background-color: #26b83a
+                box-shadow: 0 10px 10px rgba(38, 184, 58, 0.2)
+                overflow: hidden
+                top: 0
+                left: 0
+                color: #ffffff
+                font-weight: 300
+                text-align: center
+                font-size: 12px
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: .5s ease 
+                padding: 10px
+                +to(505px)
+                    display: none
+                &:hover
+                    opacity: 1
+
+// Section Rates
+.rate
+    background: #f5f5f5
+    .section-title
+        +col()
+        +size(12)
+        margin-bottom: 40px
+    .subtitle
+        +col()
+        +size(12)
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 50px
+    .tabs-container
+        +col()
+        +size(12)
+        .tabs-list
+            display: flex
+            align-items: center
+            margin-bottom: 30px
+            +to(585px)
+                flex-wrap: wrap
+                justify-content: center            
+            .select-card-title
+                margin-right: auto
+                +to(585px)
+                    margin: auto
+                    margin-bottom: 15px
+                    text-align: center
+        .tabs-content-wrapper
+            width: 100%
+            +lg-block()
+                overflow-x: auto
+                white-space: nowrap
+            .tab-content
+                &_col
+                    flex-direction: column
+                .rate-card
+                    background: #ffffff
+                    font-size: 13px
+                    font-weight: 400
+                    display: flex
+                    justify-content: space-between
+                    border: 1px solid #e8e8e8
+                    border-bottom: none
+                    padding: 50px 50px 70px 50px
+                    width: 100%
+                    box-sizing: border-box
+                    +to(476px)
+                        padding: 20px
+                        margin-bottom: 10px
+                        border-bottom: 1px solid #e8e8e8
+                    +lg-block()
+                        flex-direction: column
+                        justify-content: center
+                    &_col
+                        display: flex
+                        flex-direction: column
+                        width: calc( 100% / 3 )
+                        padding: 22px
+                        border: 1px solid #e8e8e8
+                        border-right: none
+                        justify-content: flex-start
+                        min-width: 311px
+                        &:last-child
+                            border-right: 1px solid #e8e8e8
+                        .services-list
+                            font-size: 11px
+                            width: 280px !important
+                            margin: 25px 0
+                        .rate-title
+                            text-align: center
+                            &__img
+                                margin: 0 auto
+                        .details
+                            margin: auto
+                            margin-bottom: 0
+                            &__price
+                                margin-bottom: 0
+                            .btn
+                                margin: 0
+                    .rate-title
+                        display: flex
+                        flex-direction: column
+                        +lg-block()
+                            justify-content: center
+                            text-align: center
+                        &__text
+                            font-size: 18px
+                            b
+                                font-weight: 700
+                        &__img
+                            margin-top: 30px
+                            width: 200px
+                            height: 126px
+                            +lg-block()
+                                margin: 20px auto
+                    .services-list
+                        display: flex
+                        flex-direction: column
+                        width: 340px
+                        justify-content: center
+                        +lg-block()
+                            width: auto
+                        &__item
+                            width: 100%
+                            display: flex
+                            justify-content: space-between
+                            border-top: 1px solid #f5f5f5
+                            line-height: 48px
+                            &:last-child
+                                border-bottom: 1px solid #f5f5f5
+                        &__duration
+                            font-weight: 700
+                    .details
+                        text-align: center
+                        display: flex
+                        flex-direction: column
+                        &__price-label
+                            font-size: 13px
+                            margin-top: 20px
+                        &__price
+                            font-size: 24px
+                            font-weight: 700
+                            margin-top: 14px
+                            margin-bottom: 30px
+                        .btn
+                            width: 180px
+                            height: 55px
+                            margin-bottom: 15px
+                            transition: all .5s ease
+                            +lg-block()
+                                width: auto
+                            &:hover
+                                box-shadow: 0 8px 20px
+                            &_orange-gradient
+                                &:hover
+                                    box-shadow: 0 8px 20px rgba($palette-light-orange, .5)
+                            &_green-gradient
+                                &:hover
+                                    box-shadow: 0 8px 20px rgba($palette-light-green, .5)
+                            &_blue-gradient
+                                &:hover
+                                    box-shadow: 0 8px 20px rgba($palette-light-blue, .5)
+
+// Section Contacts
+
+.form
+    // &_leave-question
+    display: flex
+    flex-direction: column
+    &__form-title
+        margin-bottom: 27px
+        font-size: 18px
+        letter-spacing: -1.6px
+    &__input, &__textarea
+        width: 320px
+    .btn
+        background: linear-gradient(to top, #cc0000 0%, #d00000 100%)
+        height: 65px
+        font-size: 16px
+        width: 320px
+    .button-signature
+        font-size: 13px
+        text-align: center
+        width: 320px
+        margin-top: 16px
+        font-weight: 500
+
+.contacts
+    background: linear-gradient(to right, #f5f5f5 50%, #ffffff 50%)
+    +lg(background, #f5f5f5)
+    padding: 0
+    .leave-question
+        +col()
+        +size(5)
+        +size-lg(12)
+    .form
+        +lg-block()
+            margin: 0 auto
+            width: max-content
+        &_leave-question
+            background: #f5f5f5
+            padding-top: 66px
+        .btn
+            margin-top: 20px
+        .button-signature
+            padding-bottom: 69px
+
+    .contacts-list
+        +col()
+        +size(7)
+        +size-lg(12)
+        background: #ffffff
+        padding-left: 156px
+        padding-top: 93px
+        padding-bottom: 69px
+        +lg-block()
+            padding: 50px 0 0 0
+        &__container
+            +lg-block()
+                margin: 0 auto
+                width: max-content
+        &__phone-title
+            margin-top: 70px
+            +lg(margin-top, 20px)
+            font-size: 13px
+            margin-bottom: 12px
+        &__phone
+            font-weight: 700
+            font-size: 17px
+            margin-bottom: 20px
+        &__email-title
+            font-size: 13px
+            margin-bottom: 12px
+        &__email
+            font-size: 17px
+            margin-bottom: 23px
+            font-weight: 500
+            display: block
+            text-decoration: underline
+        &__working-hours-label
+            margin-bottom: 12px
+            font-size: 13px
+        &__weekdays, &__weekends
+            font-size: 17px
+            margin-bottom: 25px
+            line-height: 21px
+            font-weight: 500
+// Modals 
+.modal-container
+    .modal-window
+        +sm-block()
+            padding: 30px 0  
+            width: 100%
+            &__close-button
+                margin-right: 12px
+        +sm-block()
+            &__body
+                margin-top: 0
+// Footer
+.footer
+    background-color: #0e0e0e
+    padding: 48px 0
+    .logo
+        +col()
+        +size(4)
+        &__text
+            color: #ffffff
